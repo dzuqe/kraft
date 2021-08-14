@@ -1,4 +1,5 @@
-all: build
+all: teal
 
-build:
-	echo yeet
+teal:
+	python lex.py > contract.py
+	python contract.py
