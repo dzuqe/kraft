@@ -1,18 +1,12 @@
-hammer'100
-wood'100
-metal'100
-nail'100
-
-
+hammer'100000
+wood'100000
+metal'100000
+nail'10000000
 wooden cart: nail'50, wood'10, hammer'2
 metal robot: welding tool'1, metal'10, nail'10
-
-pot'100
-meat'100
-vegetable'100
-fruit'100
-sugar'100
-salt'100
-
+pot'100000
+meat'100000
+vegetable'100000
+fruit'100000
 salad and fruits: pot'1, vegetable'10, fruit'2
 steak and chips: pot'1, vegetable'10, meat'2
