@@ -32,18 +32,11 @@ for line in lines:
             init_txt += f"  App.globalPut(Bytes('{item['name']}'), Int(0)),\n"
             local_txt += f"  App.localPut(Int(0), Bytes('{item['name']}'), Int(0)),\n"
             func_txt += f" {fn} = Seq([\n"
-            ask_func_txt = ""#  If(And(\n"
+            ask_func_txt = ""
             ch_func_txt = ""
-            counter = 0
             for i in item['reqs']:
-                char = ""
-                if counter == len(item['reqs']) - 1: 
-                    char = ")"
                 ask_func_txt += f"  Assert(App.localGet(Int(0), Bytes('{i['name']}')) >= (Int({i['items']}) * amount)),\n"
                 ch_func_txt += f"  App.localPut(Int(0), Bytes('{i['name']}'), App.localGet(Int(0), Bytes('{i['name']}')) - (Int({i['items']}) * amount)),\n"
-                counter += 1
-            #ask_func_txt += "   Return(Int(1))\n"
-            #ask_func_txt += "  ),\n"
             
             func_txt += ask_func_txt
             func_txt += ch_func_txt
