@@ -2,8 +2,9 @@ hammer'100000
 wood'100000
 metal'100000
 nail'10000000
-wooden cart: nail'50, wood'10, hammer'2
-metal robot: welding tool'1, metal'10, nail'10
+welding tool'10000000
+mynur 800: nail'50, wood'10, hammer'2
+tezar 101: welding tool'1, metal'10, nail'10
 pot'100000
 meat'100000
 vegetable'100000
